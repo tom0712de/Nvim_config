@@ -16,6 +16,7 @@ plug('williamboman/mason-lspconfig.nvim')
 
 plug('nvim-tree/nvim-web-devicons')
 plug('feline-nvim/feline.nvim')
+plug('chomosuke/typst-preview.nvim')
 vim.call('plug#end')
 
 vim.cmd('colorscheme catppuccin')

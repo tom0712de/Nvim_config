@@ -2,6 +2,11 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader=" "
 
+---- indenting in visual Mode
+vim.keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true })
+vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
+
+
 ----- Write quit
 vim.keymap.set("n", "<leader>w", ":w<CR>", {desc = "Write"})
 vim.keymap.set("n", "<leader>q", ":q<CR>", {desc = "quit"})
@@ -42,3 +47,7 @@ vim.keymap.set("i","(","()<left>",{desc = "auto Klammern"})
 vim.keymap.set("n","<leader>t",":ToggleTerm direction=float <CR>",{desc="open Floatin Term"})
 vim.keymap.set("n","<leader>tb",":ToggleTerm direction=horizontal<CR>",{desc="open bottom Term"})
 vim.keymap.set("t","<leader>q","<cmd>ToggleTerm<CR>",{desc="quitTerm"})
+
+
+--- typst
+vim.keymap.set("n","<leader>p",":TypstPreview <CR>",{desc="open a typst Preview in Browser. (live updates)"})

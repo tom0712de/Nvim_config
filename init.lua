@@ -9,7 +9,5 @@ require("config.feline")
 
 --- Window shi
 vim.opt.splitbelow = true                          -- Horizontal splits go below
-vim.opt.splitright = true                          -- Vertical splits go righ
-vim.opt.signcolumn = "yes"
-
-
+--- copy to system clipboard
+vim.cmd('set clipboard=unnamedplus')
